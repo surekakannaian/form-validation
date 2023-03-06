@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next</title>
+    <style>
+        h4{
+            font-size: 20px;
+        }
+        h4 span{
+            font-size: 16px;
+            color: rgb(18, 146, 18);
+        }
+    </style>
+</head>
+<body>
+    <h4>Name: <span id="fname"></span></h4>
+    <h4>Email: <span id="email"></span></h4>
+    <h4>Mobile-Number: <span id="mobile"></span></h4>
+    <h4>Gender: <span id="gender"></span></h4>
+    <h4>Address: <span id="address"></span></h4>
+    <h4>State: <span id="state"></span></h4>
+    <h4>Languages: <span id="lang"></span></h4>
+    <h4>pincode: <span id="pincode"></span></h4>
+    <h4>District: <span id="disttrict"></span></h4>
+    <script>
+        document.getElementById('fname').innerHTML=localStorage.getItem('firstname') + " " +localStorage.getItem('lastname');
+        document.getElementById('email').innerHTML=localStorage.getItem('email');
+        document.getElementById('mobile').innerHTML=localStorage.getItem('mobile');
+        document.getElementById('gender').innerHTML=localStorage.getItem('gender');
+        document.getElementById('address').innerHTML=localStorage.getItem('adress');
+        document.getElementById('state').innerHTML=localStorage.getItem('sae');
+        document.getElementById('lang').innerHTML=localStorage.getItem('lang');
+        document.getElementById('pincode').innerHTML=localStorage.getItem('pincode');
+        document.getElementById('disttrict').innerHTML=localStorage.getItem('district');
+    </script>
+</body>
+</html>

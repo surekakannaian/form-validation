@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="next.html" id="form" method="get" name="myform" onsubmit="return checkinput()">
+    <div class="form-item">
+      <label for="">First Name:</label>
+      <input type="text" id="fname" placeholder="*first-name">
+      <small>error</small>
+    </div>
+    <div class="form-item">
+      <label for="">Last Name:</label>
+      <input type="text" id="lname" placeholder="last-name">
+      <small>error</small>
+    </div>
+    <div class="form-item">
+      <label for="">Email:</label>
+      <input type="text" id="email" placeholder="*email">
+      <small>error</small>
+    </div>
+    <div class="form-item">
+      <label for="">Mobile Number:</label>
+      <input type="text" id="mobile-number" placeholder="*mobile-number">
+      <small>error</small>
+    </div>
+    <label for="">Gender:</label>
+    <div class="form-item check">
+     
+      <input type="radio" name="gender" value="male" id="rbd1">
+      <label for="">MALE</label>
+      <input type="radio" name="gender" value="female" id="rbd2">
+      <label for="">FEMALE</label>
+      <small>error</small>
+    </div>
+    <div class="form-item">
+      <label for="">Address:</label>
+      <input type="text" id="address" placeholder="*address">
+      <small>error</small>
+    </div>
+    <div class="form-item">
+      <label for="">State:</label>
+      <select name="state" id="select">
+        <option value="">*select your state</option>
+        <option value="TAMILNADU">TAMILNADU</option>
+        <option value="KERALA">KERALA</option>
+        <option value="KARNATAKA">KARNATAKA</option>
+        <option value="MAHARASTRA">MAHARASTRA</option>
+      </select>
+      <small>error</small>
+    </div>
+      <label for="">Languages known:</label>
+      <div class="form-item check">
+      <input type="checkbox" value="tamil" id="lang1" name="ck">
+      <label for="">Tamil</label>
+      <input type="checkbox" value="english" id="lang2" name="ck">
+      <label for="">English</label>
+      <input type="checkbox" value="hindi" id="lang3" name="ck">
+      <label for="">Hindi</label>
+      <input type="checkbox" value="telungu" id="lang4" name="ck">
+      <label for="">Telungu</label>
+      <small>error</small>
+    </div>
+    <div class="form-item">
+      <label for="">Pincode:</label>
+      <input type="text" id="pincode" placeholder="*pincode">
+      <small>error</small>
+    </div>
+    <div class="form-item">
+      <label for="">District:</label>
+      <input type="text" id="district" placeholder="*District">
+      <small>error</small>
+    </div>
+    <button>submit</button>
+  </form>
+  <script src="new.js">
+   </script>
+</body>
+
+</html>
